@@ -1283,7 +1283,9 @@ nav a {
         flex-direction: column;
         justify-content: space-evenly;
         border-bottom: 2px solid rgb(101, 101, 101);
+        
         padding-bottom: -5vh;
+
     }
 
     .ourClients {
@@ -1413,6 +1415,9 @@ nav a {
         color: rgb(255, 255, 255);
        
     }
+
+
+    
 }
 
 
@@ -1599,9 +1604,9 @@ nav a {
           }
           .footer .ContactUS {
             display: block;
-            width: 50vw;
-            font-size: 3vw;
-            height: 6vw;
+            width: 60vw;
+            font-size: 4vw;
+            height: 10vw;
           }
         
         }
