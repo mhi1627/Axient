@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Toggle menu box on menu icon click
     menuIcon.addEventListener("click", function() {
         menubox.classList.toggle("open");
-        main.style.backgroundColor = "#ffffff81"
+       document.getElementsByClassName('main').classList.toggle('blur');
+
+
     });
 
     // Close menu box on close button click
@@ -24,4 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+});
+
+document.querySelector('#menu-icon').addEventListener('click', function() {
+    document.querySelector('.main').classList.toggle('blur');
+});
+
+
+document.querySelector('#close-btn').addEventListener('click', function() {
+    document.querySelector('.main').classList.toggle('blur');
 });

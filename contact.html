@@ -6,14 +6,16 @@
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <nav>
     <div class="navlogo">
-        <a href="index.html"><h1>AXIENT INFOTECH</h1></a>
+        <a href="index.html">
+            <h1>AXIENT INFOTECH</h1>
+        </a>
     </div>
     <div class="navPart2">
         <a href="aboutUS.html">
@@ -25,7 +27,14 @@
         <a href="contact.html"><button class="ContactUS">Contact Us</button></a>
     </div>
     <div class="menu">
-      <i class="ri-menu-line"></i>
+        <i class="ri-menu-line" id="menu-icon"></i>
+        <div class="menubox" id="menubox">
+            <a href="index.html">Home</a>
+            <a href="aboutUS.html">About Us</a>
+            <a href="#">Careers</a>
+            <a href="contact.html"><button class="ContactUS">Contact Us</button></a>
+            <button class="close-btn" id="close-btn"><i class="ri-close-large-line"></i></button>
+        </div>
     </div>
 </nav>
     <div class="main">

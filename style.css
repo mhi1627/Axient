@@ -74,13 +74,16 @@ nav a {
     font-size: 3.5vw;
 }
 
-
+.blur {
+    filter: blur(5px);
+}
 
 
 .main {
     width: 100%;
     padding: 0 5vh;
-    border: 1px solid green;    
+    border: 1px solid green; 
+    filter: blur(100%);   
 }
 
 .hero {
@@ -795,7 +798,17 @@ nav a {
     padding: 1vh 3vh;
 }
 
-
+.jobs {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jobs h1{
+    color: white;
+  
+}
 /* RESPONSIVE DESIGN BEGINS HERE */
 
 
@@ -987,11 +1000,12 @@ nav a {
         position: fixed;
         top: 0;
         right: -100%; /* Start off-screen */
-        width: 70%; /* Adjust width as needed */
+        width: 50%; /* Adjust width as needed */
         height: 100%; /* Full height of viewport */
         background-color: #0a0a0a; /* Same as your main background */
         backdrop-filter: blur(10px);
         z-index: 100; /* Ensure it's above other content */
+        text-align: center;
         padding: 10vh 5vw; /* Adjust padding as needed */
         transition: right 0.3s ease; /* Smooth slide animation */
     }
@@ -1000,7 +1014,7 @@ nav a {
         right: 0; /* Slide in from the right */
     }
 
-    .menubox a, .menubox button {
+    .menubox a{
         display: block;
         color: #fafafa;
         font-size: 1.5rem;
@@ -1022,6 +1036,13 @@ nav a {
         cursor: pointer;
     }
 
+    @media (max-width:426px) {
+
+    .menubox .ContactUS  {
+        width: 100%;
+    }
+
+}
     
 
     .navPart2 {
