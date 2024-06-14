@@ -588,7 +588,7 @@ nav a {
 .footer {
     /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: 23vw 54vw 23vw;
+    grid-template-columns: 22.5vw 54vw 20vw;
     color: white;
    
    }
@@ -661,7 +661,7 @@ nav a {
        margin-top: 3vh;
    }
    .footer .ContactUS {
-       width: 18vw ;
+       width: 15vw ;
        height: 4vw;
        color: white;
        border-radius: 50px;
