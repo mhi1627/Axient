@@ -50,7 +50,7 @@ nav a {
 
 .navlogo h1 {
     color: white;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 500;
 }
 
@@ -679,62 +679,62 @@ nav a {
 .sectionInfo {
     width: 100%;
     /* margin-top: 11vh; */
-    /* border: 1px solid tan; */
+    border: 1px solid tan;
     color: white;
+    margin-top: 10vh;
 }
 
 .head {
-    font-size: 10rem;
     width: 100%;
     text-align: center;
-    line-height: 40vh;
-    opacity: 0.1;
-    height: 10vh;
-    /* position: relative; */
-    /* color: transparent; */
-    padding-top: 10vh;
-    border: 1px solid chocolate;
+    font-size: 2.5vw;
 }
 
 .head h1 {
-    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.438); */
-    color: #212121;
-    text-shadow: 1.7px 1.7px 1.7px rgb(255, 255, 255);
-}
-
-
-.aboutUS {
-    padding: 1vh 3vh;
-    box-shadow: 0 5px 15px rgba(113, 113, 113, 0.5);
-    border-radius: 10px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.438);
+    color: black;
+    text-shadow: 1.7px 1.7px 1.7px rgb(134, 134, 134);
 }
 
 .whoWeAre {
     display: flex;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border-bottom: 3px solid rgb(79, 79, 79);
 }
 
-.whoWeAre h1 {
-    font-size: 3.5rem;
-    font-weight: 500;
+.whoWeAre .p1 {
+    width: 40vw;
+}
 
+.p1 .image {
+ width: 40vw;
+ border: 1px solid green;
+}
+
+.whoWeAre h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.whoWeAre .p1 .image img {
+   width: 100%;
 }
 
 .description {
+    width: 60vw;
     display: flex;
     align-items: center;
     padding: 5vh;
 }
 
 .description p {
-    font-size: 2rem;
+    font-size: 1.8vw;
     font-weight: 200;
     color: #bcbcbc;
 }
 
 .description p span {
-    font-size: 2.2rem;
+    font-size: 2vw;
     font-weight: 600;
 }
 
@@ -807,7 +807,64 @@ nav a {
 }
 .jobs h1{
     color: white;
-  
+}
+
+/*  */
+@media (max-width:426px) {
+    
+    .head {
+        width: 100%;
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    
+    .head h1 {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.438);
+        color: black;
+        text-shadow: 1.7px 1.7px 1.7px rgb(134, 134, 134);
+    }
+    
+    .whoWeAre {
+        display: flex;
+        border: 1px solid red;
+        border-bottom: 3px solid rgb(79, 79, 79);
+    }
+    
+    .whoWeAre .p1 {
+        width: 30vw;
+    }
+    
+    .p1 .image {
+     width: 30vw;
+     border: 1px solid green;
+    }
+    
+    .whoWeAre h1 {
+        font-size: 4vw;
+        font-weight: 500;
+    }
+    
+    .whoWeAre .p1 .image img {
+       width: 100%;
+    }
+    
+    .description {
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        padding: 5vh;
+    }
+    
+    .description p {
+        font-size: 2.3vw;
+        font-weight: 200;
+        color: #bcbcbc;
+    }
+    
+    .description p span {
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
 }
 /* RESPONSIVE DESIGN BEGINS HERE */
 
