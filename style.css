@@ -679,7 +679,7 @@ nav a {
 .sectionInfo {
     width: 100%;
     /* margin-top: 11vh; */
-    border: 1px solid tan;
+    /* border: 1px solid tan; */
     color: white;
     margin-top: 10vh;
 }
@@ -698,7 +698,7 @@ nav a {
 
 .whoWeAre {
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-bottom: 3px solid rgb(79, 79, 79);
 }
 
@@ -708,7 +708,7 @@ nav a {
 
 .p1 .image {
  width: 40vw;
- border: 1px solid green;
+ /* border: 1px solid green; */
 }
 
 .whoWeAre h1 {
@@ -739,23 +739,24 @@ nav a {
 }
 
 .whatWedo {
-    margin-top: 5vh;
+    margin-top: 4vh;
+    color: white;
 }
 
 .whatWedo h1 {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     font-weight: 500;
-    ;
+    color: white;
 }
 
 .whatWedo>h3 {
-    font-size: 3rem;
+    font-size: 3vw;
     text-align: center;
     font-weight: 500;
-    ;
+    margin-top: 3vh;
     -webkit-text-stroke: 1px white;
     color: black;
-    border-bottom: 3px solid rgb(79, 79, 79);
+   
     padding-bottom: 4vh;
 }
 
@@ -766,7 +767,8 @@ nav a {
     background: #131313;
     border-radius: 15px;
     padding: 2vh 8vh;
-    height: 70vh;
+    /* border: 1px solid firebrick; */
+    box-shadow: 1px 1px 10px 1px rgba(225, 225, 225, 0.7);
 }
 
 .whatWedo h2 {
@@ -779,16 +781,22 @@ nav a {
     border-radius: 5px;
 }
 
-.whatWedo img {
-    width: 40%;
-    height: 70%;
+.whatWedo .symImg {
+    width:40vw;
+    /* border: 1px solid firebrick; */
 }
+
 
 .descp {
     display: flex;
     color: #fafafa;
+    gap: 2vh;
+    
 }
 
+.descp .para  {
+    width: 60vw;
+}
 .descp .para p {
     font-size: 1.8rem;
 }
@@ -796,6 +804,7 @@ nav a {
 .descp .para ul {
     font-size: 1.5rem;
     padding: 1vh 3vh;
+    list-style: disc;
 }
 
 .jobs {
@@ -810,6 +819,36 @@ nav a {
 }
 
 /*  */
+@media (max-width:768px) {
+
+    .whatWedo h2 {
+        font-size: 4vw;
+    }
+    
+    .descp {
+        display: flex;
+        flex-direction: column;
+        color: #fafafa;
+        gap: 2vh;
+        align-items: center;
+
+    }
+
+    .whatWedo .symImg {
+        width:30vw;
+        
+    }
+
+    .descp .para p {
+        font-size: 2.5vw;
+    }
+    .descp .para ul {
+        font-size: 2vw;
+        padding: 1vh 3vh;
+    }
+  
+    
+}
 @media (max-width:426px) {
     
     .head {
@@ -825,24 +864,20 @@ nav a {
     }
     
     .whoWeAre {
-        display: flex;
-        border: 1px solid red;
         background-image: url(imgs/bird.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;   
-        border-bottom: 3px solid rgb(79, 79, 79);
     }
     
     .whoWeAre .p1 {
         width: 30vw;
         display: none;
-        
     }
     
     .p1 .image {
      width: 30vw;
-     border: 1px solid green;
+     /* border: 1px solid green; */
     }
     
     .whoWeAre h1 {
@@ -873,6 +908,57 @@ nav a {
         font-weight: 600;
         color: #ffffff;
     }
+
+    .whatWedo h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .whatWedo>h3 {
+        font-size: 5vw;
+        text-align: center;
+      padding-bottom: 4vh;
+    }
+
+
+    .webDev,
+.staffing,
+.businessIntelligence {
+    height: auto;
+    padding: 1vh 5vw;
+}
+
+
+.whatWedo h2 {
+    font-size: 7vw;
+}
+
+.whatWedo .symImg {
+    width:50vw;
+}
+
+
+.descp {
+    display: flex;
+    color: #fafafa;
+    gap: 2vh;
+    
+}
+
+.descp .para  {
+    width:100%;
+}
+.descp .para p {
+    font-size: 4.5vw;
+}
+
+.descp .para ul {
+    font-size:3.5vw;
+    padding: 1vh 3vh;
+    list-style: disc;
+}
+
+
 }
 /* RESPONSIVE DESIGN BEGINS HERE */
 
