@@ -82,7 +82,7 @@ nav a {
 .main {
     width: 100%;
     padding: 0 5vh;
-    border: 1px solid green; 
+    /* border: 1px solid green;  */
     filter: blur(100%);   
 }
 
