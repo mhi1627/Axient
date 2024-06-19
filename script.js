@@ -6,33 +6,29 @@ document.addEventListener("DOMContentLoaded", function() {
     const closeBtn = document.getElementById("close-btn");
     const main = document.querySelector('.main');
 
-    // Toggle menu box on menu icon click
-    menuIcon.addEventListener("click", function() {
+
+    menuIcon.addEventListener("click", () => {
         menubox.classList.toggle("open");
-       document.getElementsByClassName('main').classList.toggle('blur');
-
-
+        main.classList.toggle("blur");
+    
     });
 
-    // Close menu box on close button click
-    closeBtn.addEventListener("click", function() {
-        menubox.classList.remove("open");
-    });
+  
+    closeBtn.addEventListener("click", () => {
+            menubox.classList.remove("open")
+            main.classList.remove("blur")
+        })
 
-    // Close menu box when clicking outside of it
-    document.addEventListener("click", function(event) {
-        if (!menubox.contains(event.target) && event.target !== menuIcon) {
-            menubox.classList.remove("open");
-        }
-    });
+    
+     document.addEventListener("click", (event) =>{
+            if (event.target !== menuIcon && !menubox.contains(event.target)) {
+                menubox.classList.remove("open");
+                main.classList.remove("blur")   
+            }
+        })
 
-});
-
-document.querySelector('#menu-icon').addEventListener('click', function() {
-    document.querySelector('.main').classList.toggle('blur');
-});
+       
+})
 
 
-document.querySelector('#close-btn').addEventListener('click', function() {
-    document.querySelector('.main').classList.toggle('blur');
-});
+
