@@ -27,8 +27,67 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
 
-       
+
+
+
+
+
+// Animations 
+
+// Animated Navbar
+var tl = gsap.timeline();
+gsap.from(".navlogo", {
+    y:-50
+})
+
+tl.from(".navPart2", {
+    y:-80,
+    stagger:0.5,
+    delay:0.5
 })
 
 
 
+const head = document.querySelectorAll(".head")
+
+const anim = gsap.to (".head", {
+    backgroundPosition: "left 600px top -50px",
+    duration:3,
+    paused:true
+})
+head.forEach(word => {
+   
+    
+    word.addEventListener("mouseenter", () => {
+        anim.play();
+    })
+    word.addEventListener("mouseleave", () => {
+        anim.reverse();
+    })
+})
+
+
+
+const cards = document.querySelectorAll(".service");
+var hey = "hey"
+cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+       gsap.to(".innerCard", {
+        top:0
+       });
+       
+  
+})
+       
+})
+cards.forEach(card => {
+   
+
+    card.addEventListener("mouseleave", () => {
+       gsap.to(".innerCard", {
+         top:500
+       })
+    })
+})
+       
+})
